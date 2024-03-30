@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="365.0" style="-fx-background-color: #add8e6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Page1Controller">
+   <children>
+      <AnchorPane prefHeight="330.0" prefWidth="368.0">
+         <children>
+            <Text layoutX="109.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Müzik Listesi">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="exitImage" fitHeight="35.0" fitWidth="32.0" layoutX="333.0" layoutY="-1.0" onMouseClicked="#logOutSample" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/exit-1295304_1280.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="table" layoutX="1.0" layoutY="59.0" prefHeight="272.0" prefWidth="365.0">
+              <columns>
+                <TableColumn fx:id="sarkiAdi" prefWidth="118.66671752929688" text="Şarkı Adı" />
+                <TableColumn fx:id="sanatciAdi" prefWidth="95.99993896484375" text="Sanatçı Adı" />
+                  <TableColumn fx:id="turu" prefWidth="82.66668701171875" text="Türü" />
+                  <TableColumn fx:id="sure" prefWidth="68.66668701171875" text="Süre" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
